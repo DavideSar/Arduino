@@ -1,18 +1,22 @@
-int led = 4;
-int readTime = 0;
+const int LED = 4;
+const int IN = 1;
+int lastRead=0;
 
 void setup() {
-  pinMode(led, OUTPUT);
+  pinMode(LED, OUTPUT);
   Serial.begin(9600);
 }
 
 void loop() {
 
-  digitalWrite(led, HIGH);
-  delay(analogRead(readTime));
+  digitalWrite(LED, HIGH);
+  delay(analogRead(IN));
 
-  digitalWrite(led, LOW);
-  delay(analogRead(readTime));
+  digitalWrite(LED, LOW);
+  delay(analogRead(IN));
 
-  Serial.println(analogRead(readTime));
+  if (analogRead(IN)!=lastRead){
+    Serial.println(analogRead(IN));
+    lastRead = analogRead(IN);
+  }
 }
