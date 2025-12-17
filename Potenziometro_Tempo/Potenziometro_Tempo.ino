@@ -21,7 +21,9 @@ void loop() {
     volt = (5000*val)/1023;
     Serial.print(val);
     Serial.print(", ");
-    Serial.print(volt);
+    Serial.print(volt/1000);
+    Serial.print(".");
+    Serial.print(volt%1000);
     Serial.println();
     lastRead = val;
   }
