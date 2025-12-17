@@ -8,15 +8,21 @@ void setup() {
 }
 
 void loop() {
+  int val = analogRead(IN);
+  int volt = 0;
 
   digitalWrite(LED, HIGH);
-  delay(analogRead(IN));
+  delay(val);
 
   digitalWrite(LED, LOW);
-  delay(analogRead(IN));
+  delay(val);
 
-  if (analogRead(IN)!=lastRead){
-    Serial.println(analogRead(IN));
-    lastRead = analogRead(IN);
+  if (val!=lastRead){
+    volt = (5000*val)/1023;
+    Serial.print(val);
+    Serial.print(", ");
+    Serial.print(volt);
+    Serial.println();
+    lastRead = val;
   }
 }
