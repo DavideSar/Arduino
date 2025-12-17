@@ -1,1 +1,1 @@
-Turn an LED on and off. 
+Accendi e spegni LED a ritmo di 100ms
