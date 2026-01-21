@@ -1,17 +1,17 @@
+//for DHT11
 #include "DHT.h"
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
+//for THERMO
 #include "max6675.h"
 int thermoDO = 4;
 int thermoCS = 5;
 int thermoCLK = 6;
 MAX6675 thermocouple(thermoCLK, thermoCS, thermoDO);
 
-float T_NTC;
-float T_DHT;
-float T_THERMO;
+//for NTC
 float Vout = 0;
 float R1 = 10000;
 float R25 = 10000;
@@ -22,6 +22,12 @@ const float T2 = 298.15;
 const float B = 3965;
 float HUM;
 
+//Temperature variables
+float T_NTC;
+float T_DHT;
+float T_THERMO;
+
+//for the delay
 const unsigned long delta = 2000;
 unsigned long now;
 unsigned long old = 0;
@@ -29,7 +35,6 @@ unsigned long minutes = 0;
 
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(115200);
   dht.begin();
 }
