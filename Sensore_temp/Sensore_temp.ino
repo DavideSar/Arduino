@@ -1,17 +1,17 @@
-//for DHT11
+//  for DHT11
 #include "DHT.h"
 #define DHTPIN 2
 #define DHTTYPE DHT11
 DHT dht(DHTPIN, DHTTYPE);
 
-//for THERMO
+//  for THERMO
 #include "max6675.h"
 int thermoDO = 4;
 int thermoCS = 5;
 int thermoCLK = 6;
 MAX6675 thermocouple(thermoCLK, thermoCS, thermoDO);
 
-//for NTC
+//  for NTC
 float Vout = 0;
 float R1 = 10000;
 float R25 = 10000;
@@ -22,12 +22,12 @@ const float T2 = 298.15;
 const float B = 3965;
 float HUM;
 
-//Temperature variables
+//  temperature variables
 float T_NTC;
 float T_DHT;
 float T_THERMO;
 
-//for the delay
+//  for the delay
 const unsigned long delta = 2000;
 unsigned long now;
 unsigned long old = 0;
