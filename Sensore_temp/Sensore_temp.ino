@@ -42,7 +42,8 @@ void setup() {
 void loop() {
   now = millis();
   if(now >= old + delta){
-    
+
+    //  debug delay
     /*
     Serial.print("o: ");
     Serial.print(old);
@@ -52,18 +53,18 @@ void loop() {
 
     old = now;
 
-    //NTC
+    //  NTC
     Vout = analogRead(A0);
     Rt = (Vi/Vout - 1)*R1;
     T_NTC = (B/(log(Rt/R25) + (B/T2))) - T0;
 
-    //DHT
+    //  DHT
     T_DHT = dht.readTemperature();
 
-    //THERMOCOUPLE
+    //  THERMOCOUPLE
     T_THERMO = thermocouple.readCelsius();
 
-    //Stampa su file csv
+    //  print on CSV via PUTTY
     Serial.print(now);
     Serial.print(",");
     Serial.print(T_NTC);
