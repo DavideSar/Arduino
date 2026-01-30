@@ -1,0 +1,3 @@
+[submodule "Sensore_temp"]
+	path = Sensore_temp
+	url = https://github.com/DavideSar/Sensori-Temperatura.git
