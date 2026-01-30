@@ -1,3 +1,6 @@
-[submodule "Sensore_temp"]
-	path = Sensore_temp
+[submodule "Sensore_Temp"]
+	path = Sensore_Temp
 	url = https://github.com/DavideSar/Sensori-Temperatura.git
+[submodule "Progetto_Natale"]
+	path = Progetto_Natale
+	url = https://github.com/DavideSar/ITS_Progetto_Natale.git
