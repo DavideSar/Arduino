@@ -20,7 +20,6 @@ float Rt;
 const float T0 = 273.15;
 const float T2 = 298.15;
 const float B = 3965;
-float HUM;
 
 //  temperature variables
 float T_NTC;
@@ -32,7 +31,6 @@ const unsigned long delta = 2000;
 unsigned long now;
 unsigned long old = 0;
 unsigned long minutes = 0;
-
 
 void setup() {
   Serial.begin(115200);
