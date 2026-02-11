@@ -8,3 +8,6 @@
 [submodule "Sensori_Oggetto"]
 	path = Sensori_Oggetto
 	url = https://github.com/DavideSar/ITS_Progetto_Sensori_Oggetto.git
+[submodule "Motor.ino"]
+	path = Motor.ino
+	url = https://github.com/DavideSar/Motor.ino.git
