@@ -13,4 +13,4 @@
 	url = https://github.com/DavideSar/Motor.ino.git
 [submodule "Arduino-NFC"]
 	path = Arduino-NFC
-	url = https://github.com/DavideSar/Arduino-NFC
+	url = https://github.com/DavideSar/Arduino-NFC.git
