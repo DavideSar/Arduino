@@ -8,9 +8,3 @@
 [submodule "Sensori_Oggetto"]
 	path = Sensori_Oggetto
 	url = https://github.com/DavideSar/ITS_Progetto_Sensori_Oggetto.git
-[submodule "Motor.ino"]
-	path = Motor.ino
-	url = https://github.com/DavideSar/Motor.ino.git
-[submodule "Arduino-NFC"]
-	path = Arduino-NFC
-	url = https://github.com/DavideSar/Arduino-NFC.git
