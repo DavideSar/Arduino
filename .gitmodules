@@ -14,3 +14,6 @@
 [submodule "Arduino-NFC"]
 	path = Arduino-NFC
 	url = https://github.com/DavideSar/Arduino-NFC.git
+[submodule "Progetto_Finale"]
+	path = Progetto_Finale
+	url = https://github.com/DavideSar/ARDUINO-PROGETTO-FINALE.git
